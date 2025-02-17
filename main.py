@@ -9,7 +9,7 @@ app = FastAPI()
 
 # 📌 Cargar todos los modelos al iniciar la API
 modelos = {}
-modelos_path = os.path.join(os.path.dirname(__file__), "modelos_productos_arima/")
+modelos_path = os.path.join(os.path.dirname(__file__), "modelos_productos/")
 
 if not os.path.exists(modelos_path):
     raise Exception("⚠️ No se encontró la carpeta de modelos.")
